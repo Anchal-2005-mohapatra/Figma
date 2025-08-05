@@ -1,83 +1,94 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
-.navigation
-{
+
+.navigation {
     display: flex;
-     background-color: whitesmoke;
-     font-size: 14px;
+    background-color: whitesmoke;
+    font-size: 14px;
+    position: sticky;
+    top: 0px;
 }
-.navigation #para::after
-{
+
+.navigation #para::after {
     content: "|";
     padding: 10px;
 
 }
-nav{
-    padding: 20px 300px;
 
-    
+nav {
+    padding: 20px 300px;
+  position: sticky;
+  top: 50px;
+  background-color: white;
+
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-      
-    
-}
-nav ul li{
-    text-decoration: none;
-    list-style-type:none;
-    
-}
-nav ul li a{
-    text-decoration: none;
-     color: black;
-}
-header{
-     text-align: center;
-     padding: 10px 0;
-}
-header a{
- color:rgba(9, 76, 245, 0.795);
- text-decoration: none;
+
 
 }
-.hero
-{
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header a {
+    color: rgba(9, 76, 245, 0.795);
+    text-decoration: none;
+
+}
+
+.hero {
     display: flex;
     flex-direction: column;
-   gap: 20px;
+    gap: 20px;
     align-items: center;
     background-color: whitesmoke;
     height: 500px;
-    padding-top:50px;
+    padding-top: 50px;
+    background-image: url("./apple1.jpg");
+    background-size: cover;
 }
-.hero #buy
-{
-    background-color:rgba(9, 76, 245, 0.795);
+
+.hero #buy {
+    background-color: rgba(9, 76, 245, 0.795);
     width: 140px;
     height: 110px;
     color: white;
     font-size: 30px;
     font-weight: bold;
     padding: 5px 10px;
- border-radius: 20px;
+    border-radius: 20px;
 }
-.hero #with
-{
+
+.hero #with {
     background-color: rgba(9, 76, 245, 0.795);
     color: white;
     font-size: 17px;
     width: 165px;
     padding: 5px 10px;
- border-radius: 20px;
- font-weight:bold;
+    border-radius: 20px;
+    font-weight: bold;
 }
-.hero #choose
-{
+
+.hero #choose {
     background-color: rgba(9, 76, 245, 0.795);
     width: 150px;
     height: 150px;
@@ -85,102 +96,320 @@ header a{
     font-size: 30px;
     font-weight: bold;
     padding: 5px 10px;
- border-radius: 20px;
+    border-radius: 20px;
 }
-.hero button
-{
+
+.hero button {
     padding: 11px 15px;
     border-radius: 50px;
     font-size: 17px;
-    color: rgba(9, 76, 245, 0.795) ;
-    border-color:  rgba(9, 76, 245, 0.795);
+    color: rgba(9, 76, 245, 0.795);
+    border-color: rgba(9, 76, 245, 0.795);
 }
-.hero button:hover{
-    background-color: rgba(9, 76, 245, 0.795) ;
+
+.hero button:hover {
+    background-color: rgba(9, 76, 245, 0.795);
     color: white;
 }
 
-.phone
-{
+.phone {
     text-align: center;
     margin: 20px 0;
     padding: 30px 0;
     background-color: whitesmoke;
 }
-.phone .flex
-{
+
+.phone .flex {
     display: flex;
     justify-content: center;
     padding: 20px;
     gap: 20px;
 }
-.phone img{
+
+.phone img {
     height: 200px;
 }
-.phone .flex button{
+
+.phone .flex button {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 50px;
-    border-color:rgba(9, 76, 245, 0.795) ;
+    border-color: rgba(9, 76, 245, 0.795);
     color: rgba(9, 76, 245, 0.795);
-    transition:transform 0.5s;
+    transition: transform 0.5s;
 }
-.phone .flex button:hover
-{
-   background-color: rgba(9, 76, 245, 0.795);
-   color: white;
-   font-weight: bold;
-   transform: scale(1.1);
+
+.phone .flex button:hover {
+    background-color: rgba(9, 76, 245, 0.795);
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
 
 }
-#built
-{
-   color:rgba(9, 76, 245, 0.795);
-}
-#for
-{
-    color:  rgb(73, 112, 150);
-}
-#apple
-{
-    color: purple;
-}
-#inte
-{
-    color: orangered;
-}
-.mac 
-{
+
+
+
+.mac {
     text-align: center;
-        margin: 20px 0;
+    margin: 20px 0;
     padding: 30px 0;
-    background:linear-gradient(to bottom, rgba(174, 209, 244, 0.74), rgb(251, 251, 251));
+    background: linear-gradient(to bottom, rgba(197, 220, 244, 0.614), rgb(251, 251, 251));
     background-color: whitesmoke;
 }
-.mac img{
+ #built {
+    color: rgba(9, 76, 245, 0.795);
+}
+
+#for {
+    background: linear-gradient(to right, rgba(9, 76, 245, 0.795), purple);
+    background-clip: text;
+    color: transparent
+}
+
+#apple {
+    background: linear-gradient(to right, purple, red);
+    background-clip: text;
+    color: transparent
+}
+
+#inte {
+    color: orangered;
+}
+.mac img {
     height: 200px;
 }
-.mac .flex
-{
+
+.mac .flex {
     display: flex;
     justify-content: center;
     padding: 20px;
     gap: 20px;
 }
-.mac .flex button{
+
+.mac .flex button {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 50px;
-    border-color:rgba(9, 76, 245, 0.795) ;
+    border-color: rgba(9, 76, 245, 0.795);
     color: rgba(9, 76, 245, 0.795);
-    transition:transform 0.5s;
+    transition: transform 0.5s;
 }
-.mac .flex button:hover
+
+.mac .flex button:hover {
+    background-color: rgba(9, 76, 245, 0.795);
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#img {
+    background-image: url("./ipad.jpg");
+}
+
+#img1 {
+    background-image: url("./watch.jpg");
+}
+
+#img2 {
+    background-image: url("./student.jpg");
+}
+
+#img3 {
+    background-image: url("./airpod4.jpg");
+}
+
+#img4 {
+    background-image: url("./macbookpro.jpg");
+}
+
+#img5 {
+    background-image: url("./traidin.jpg");
+}
+
+.grid {
+    height: 400px;
+    width: 98%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.containt {
+
+    position: absolute;
+    top: 10px;
+    /* left: 100px; */
+    color: white;
+    text-align: center;
+    padding: 0 50px;
+
+}
+
+.containt button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50px;
+    border-color: rgba(9, 76, 245, 0.795);
+    background-color: rgba(9, 76, 245, 0.795);
+    color: white;
+    transition: transform 0.5s;
+}
+
+.containt #buy1 {
+    background-color: rgba(0, 0, 0, 0.437);
+    color: rgba(9, 76, 245, 0.986)  ;
+}
+
+.containt #buy1:hover {
+    background-color: rgba(9, 76, 245, 0.986);
+    color: white;
+}
+
+.build {
+    position: absolute;
+    bottom: 20px;
+    padding: 0 30px;
+}
+
+.containt1 {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    padding: 0 50px;
+
+}
+
+.containt1 button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50px;
+    border-color: rgba(9, 76, 245, 0.795);
+    background-color: rgba(9, 76, 245, 0.795);
+    color: white;
+    transition: transform 0.5s;
+}
+
+.containt1 #buy2 {
+    background-color: rgba(0, 0, 0, 0.437);
+    color: rgba(9, 76, 245, 0.986)  ;
+}
+
+.containt1 #buy2:hover {
+    background-color: rgba(9, 76, 245, 0.986);
+    color: white;
+}
+
+.containt2 {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+   
+   
+}
+.containt2 button
 {
-   background-color: rgba(9, 76, 245, 0.795);
-   color: white;
-   font-weight: bold;
-   transform: scale(1.1);
+      padding: 10px 20px;
+     border-radius: 50px;
+}
+.containt3
+{
+    position:absolute;
+    bottom: 30px;
+    left: 50px;
+    color: white;
+}
+.containt3 button
+{
+      padding: 10px 20px;
+     border-radius: 50px;
+     background-color:rgba(9, 76, 245, 0.986) ;
+     color: white;
+     margin:10px 0px;
+}
+.containt3 #buy3 {
+    background-color: rgba(0, 0, 0, 0.437);
+    border-color: rgba(9, 76, 245, 0.986) ;
+    color: rgba(9, 76, 245, 0.986)  ;
+}
+.containt3 #buy3:hover{
+    color: white;
+    background-color: rgba(9, 76, 245, 0.986);
+}
+.containt4 {
+
+    position: absolute;
+    top: 10px;
+    /* left: 100px; */
+    color: black;
+    text-align: center;
+    padding: 0 50px;
 
 }
 
+.containt4 button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50px;
+    border-color: rgba(9, 76, 245, 0.795);
+    background-color: rgba(9, 76, 245, 0.795);
+    color: white;
+    transition: transform 0.5s;
+}
+.images
+{
+    display: flex;
+    gap: 20px;
+    /* width: 100%; */
+    height: 500px;
+    padding: 30px 10px;
+    overflow: scroll;
+}
+.des
+{
+    padding: 30px 20px;
+}
+.des p{
+    padding: 5px 0;
+}
+.end
+{
+    padding: 6px 10px;
+}
+.end p{
+    padding: 10px 0;
+}
+.final
+{
+    padding: 10px;
+}
+
+.final a
+{
+    text-decoration: none;
+    color: black;
+
+}
+.final a::after
+{
+    content: "|";padding: 10px;
+}
+
+
+@media screen and (max-width:450px) {
+    .navigation
+    {
+        justify-content: flex-start;
+    }
+    nav
+    {
+        display: none;
+    }
+}
