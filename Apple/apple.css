@@ -19,9 +19,10 @@
 
 nav {
     padding: 20px 30px;
-  position: sticky;
-  top: 50px;
-  background-color: white;
+    position: sticky;
+    top: 50px;
+    background-color: white;
+    
 
 }
 
@@ -29,7 +30,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-
+    /* width: 10px; */
 
 }
 
@@ -156,7 +157,8 @@ header a {
     background: linear-gradient(to bottom, rgba(197, 220, 244, 0.614), rgb(251, 251, 251));
     background-color: whitesmoke;
 }
- #built {
+
+#built {
     color: rgba(9, 76, 245, 0.795);
 }
 
@@ -175,6 +177,7 @@ header a {
 #inte {
     color: orangered;
 }
+
 .mac img {
     height: 200px;
 }
@@ -250,7 +253,7 @@ header a {
     top: 10px;
     color: white;
     text-align: center;
-    
+
 
 }
 
@@ -266,7 +269,7 @@ header a {
 
 .containt #buy1 {
     background-color: rgba(0, 0, 0, 0.437);
-    color: rgba(9, 76, 245, 0.986)  ;
+    color: rgba(9, 76, 245, 0.986);
 }
 
 .containt #buy1:hover {
@@ -300,7 +303,7 @@ header a {
 
 .containt1 #buy2 {
     background-color: rgba(0, 0, 0, 0.437);
-    color: rgba(9, 76, 245, 0.986)  ;
+    color: rgba(9, 76, 245, 0.986);
 }
 
 .containt1 #buy2:hover {
@@ -312,38 +315,41 @@ header a {
     position: absolute;
     bottom: 40px;
     left: 50px;
-   
-   
+
+
 }
-.containt2 button
-{
-      padding: 10px 20px;
-     border-radius: 50px;
+
+.containt2 button {
+    padding: 10px 20px;
+    border-radius: 50px;
 }
-.containt3
-{
-    position:absolute;
+
+.containt3 {
+    position: absolute;
     bottom: 30px;
     left: 50px;
     color: white;
 }
-.containt3 button
-{
-      padding: 10px 20px;
-     border-radius: 50px;
-     background-color:rgba(9, 76, 245, 0.986) ;
-     color: white;
-     margin:10px 0px;
+
+.containt3 button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgba(9, 76, 245, 0.986);
+    color: white;
+    margin: 10px 0px;
 }
+
 .containt3 #buy3 {
     background-color: rgba(0, 0, 0, 0.437);
-    border-color: rgba(9, 76, 245, 0.986) ;
-    color: rgba(9, 76, 245, 0.986)  ;
+    border-color: rgba(9, 76, 245, 0.986);
+    color: rgba(9, 76, 245, 0.986);
 }
-.containt3 #buy3:hover{
+
+.containt3 #buy3:hover {
     color: white;
     background-color: rgba(9, 76, 245, 0.986);
 }
+
 .containt4 {
 
     position: absolute;
@@ -364,115 +370,334 @@ header a {
     color: white;
     transition: transform 0.5s;
 }
-.images img{
- 
-    height: 600px;
-}
-.images
-{
-    display: flex;
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    padding: 30px 10px;
+    padding: 10px 10px;
     overflow: scroll;
-}
-.image1 .first
-{
-    display: flex;
-    gap: 20px;
-    padding: 0 10px;
-}
-.second
-{
-    display: flex;
-    gap: 20px;
-    padding: 0 10px;
-}
-.third
-{
-    display: flex;
-    gap: 20px;
-    padding: 0 10px;
-}
-.fourth
-{
-    display: flex;
-    gap: 20px;
-    padding: 0 10px;
-}
-.fifth
-{
-    display: flex;
-    gap: 20px;
-    padding: 0 10px;
-}
-.sixth
-{
-    display: flex;
-    gap: 20px;
-    padding: 0 10px;
+
 }
 
-.des
+.images .image1 {
+    background-image: url("./fountain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+
+}
+
+.images .image2 {
+    background-image: url("./gorge.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+}
+
+.images .image3 {
+    background-image: url("./severance.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+}
+
+.images .image4 {
+    background-image: url("./silo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+}
+
+.images .image5 {
+    background-image: url("./studio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+}
+
+.images .image6 {
+    background-image: url("./yourfriend.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+}
+
+.image1 .container {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+    color: white;
+    text-align: center;
+}
+.image1 .container button
 {
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    
+}
+
+.image2 .container1 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.image2 .container1 button
+{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+}
+
+.container2 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+ .container2 button
+{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+}
+
+.container3 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.container3 button
+{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+}
+
+.container4 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.container4 button
+{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+}
+.container5 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.container5 button
+{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+}
+.images button
+{
+   
+   transition: transform 0.4s;
+}
+.images button:hover
+{
+    color: white;
+   background-color: black;
+ transform: scale(1.1);
+}
+.des {
     padding: 30px 20px;
 }
-.des p{
+
+.des p {
     padding: 5px 0;
 }
-.end
-{
+
+.end {
     padding: 6px 10px;
 }
-.end p{
+
+.end p {
     padding: 10px 0;
 }
-.final
-{
+
+.final {
     padding: 10px;
 }
 
-.final a
-{
+.final a {
     text-decoration: none;
     color: black;
 
 }
-.final a::after
-{
-    content: "|";padding: 10px;
+
+.final a::after {
+    content: "|";
+    padding: 10px;
 }
 
 
 @media screen and (max-width:450px) {
-    .navigation
-    {
+    .navigation {
         justify-content: flex-start;
     }
-    li 
-    {
-        display: none;
+
+    nav ul {
         justify-content: flex-start;
-        text-align: start;
 
     }
+
+    li {
+        display: none;
+
+    }
+
     .phone img {
-     width: 200px;
-     height: 200px;
-    }
-    .mac img
-    {
         width: 200px;
-        height:200px;
+        height: 200px;
     }
-    .box{
-        grid-template-columns: repeat(1,1fr);
+
+    .mac img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box {
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
-    .images{
-        width: 100%;
-    }
-    .images img
+
+  .images .image1{
+    height: 270px;
+    width: 450px;
+
+  }
+  .images .image2{
+    height: 270px;
+    width: 450px;
+
+  }
+  .images .image3{
+    height: 270px;
+    width: 450px;
+
+  }
+  .images .image4{
+   height: 270px;
+    width: 450px;
+
+  }
+  .images .image5{
+   height: 270px;
+    width: 450px;
+
+  }
+  .images .image6{
+    height: 270px;
+    width: 450px;
+
+  }
+}
+@media screen and (min-width:451px) and (max-width:768px) {
+.images .image1{
+    height: 500px;
+    width: 840px;
+}
+.images .image2{
+    height: 500px;
+    width: 840px;
+}
+.images .image3{
+    height: 500px;
+    width: 840px;
+}
+.images .image4{
+    height: 500px;
+    width: 840px;
+}
+.images .image5{
+    height: 500px;
+    width: 840px;
+}
+.images .image6{
+    height: 500px;
+    width: 840px;
+}
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .images .image1
     {
-        height: 400px;
+        height:560px;
+        width: 870px;
     }
+      .images .image2
+    {
+       height:560px;
+        width: 870px;
+    }
+      .images .image3
+    {
+        height:560px;
+        width: 870px;
+    }
+      .images .image4
+    {
+        height:560px;
+        width: 870px;
+    }
+      .images .image5
+    {
+      height:560px;
+        width: 870px;
+    }
+      .images .image6
+    {
+      height:560px;
+        width: 870px;
+    }
+    
+    
 }
