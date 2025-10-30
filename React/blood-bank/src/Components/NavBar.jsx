@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineBars } from 'react-icons/ai';
+import { AiOutlineLogin } from 'react-icons/ai';
 
 
 const NavBar = () => {
@@ -45,8 +46,8 @@ const NavBar = () => {
                     <Link to={"/contact"}>Contact us</Link>
                 </li>
                 <div className='flex gap-40 md:gap-47'>
-                    <button onClick={goToAbout} className='bg-amber-500 rounded px-2'>Login</button>
-                    <AiOutlineBars size={20} onClick={hamburger} className='block md:hidden lg:hidden xl:hidden'
+                    <button onClick={goToAbout} className='bg-amber-500 rounded px-2 flex p-1' > <AiOutlineLogin size={22} className='mr-2 '/>Login</button>
+                    <AiOutlineBars size={20} onClick={hamburger} className='block md:hidden lg:hidden xl:hidden mt-2'
                     />
                 </div>
                 

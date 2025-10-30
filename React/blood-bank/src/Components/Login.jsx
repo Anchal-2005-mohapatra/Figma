@@ -1,9 +1,10 @@
 import React from 'react'
-import { AiOutlineLogin } from 'react-icons/ai';
+
 
 const Login=()=> {
   return (
-    <div><AiOutlineLogin />Login</div>
+    <div className='flex'>
+      Login</div>
   )
 }
 
